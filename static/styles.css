@@ -78,6 +78,7 @@ nav{
     width: 50%;
     height: auto;
     max-height: 200px; 
+    border-radius: 7px;
 }
 
 .custom-text-white {

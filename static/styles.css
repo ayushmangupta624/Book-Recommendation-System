@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    /* background-color: aqua; */
+    background: -webkit-linear-gradient(rgb(179, 204, 230), rgb(5, 203, 254));
+   
+
+    height: 5vw;
+}
+
+.leftNav{
+    display: flex;
+    width: 80%;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.heading{
+    font-family: 'Poppins';
+}
+
+/* First Section */
+
+.firstSection h2{
+    font-family: 'Poppins';
+    font-size: 50px;
+    margin: 50px 30px;
+    color: white;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(110, 36, 221), rgb(5, 203, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  
+}
+
+.firstSection input{
+    margin: -40px 467px;
+    width: 35%;
+    height: 30px; 
+    padding: 10px 15px;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.firstSection button{
+    height: 53px;
+    position: absolute;
+    right: 488px;
+    top: 235px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.custom-col {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+
+.custom-card-body {
+    padding: 1.25rem;
+}
+
+
+.custom-card-img-top {
+    width: 50%;
+    height: auto;
+    max-height: 200px; 
+}
+
+.custom-text-white {
+    color: #fff;
+    font-family: 'Poppins'
+}
+
+.recHeading{
+    font-size: 50px;
+    font-family: 'Poppins';
+    margin: 100px 30px;
+    text-align: center;
+    color: white;
+    background: -webkit-linear-gradient(rgb(110, 36, 221), rgb(5, 203, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+
+}

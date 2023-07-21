@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Book Recommendation System</title>
+</head>
+<body>
+    <nav>
+        <div class="leftNav">
+            <h1 class="heading">Book Recommendation System</h1>
+        </div>
+
+        
+    </nav>
+
+    <section class="firstSection">
+        
+        <h2>If You Like...</h2>
+
+
+        <div class="search">
+            <form action="/recommend_books" method="post">
+            <input name="user_input" placeholder="Book Title">
+            <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        {% if data %}
+        <h1 class="recHeading">You May Also Like:</h1>
+            {% for i in data %}
+                
+                <div class="custom-col">
+                    <div class="custom-card">
+                        <div class="custom-card-body">
+                            <img class="custom-card-img-top" src="{{i[2]}}">
+                            <p class="custom-text-white">{{i[0]}}</p>
+                            <h4 class="custom-text-white">{{i[1]}}</h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        {% endif %}
+            
+
+    </section>
+    
+</body>
+</html>
